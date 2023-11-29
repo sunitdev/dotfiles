@@ -39,6 +39,9 @@ lazy.setup({
           }
         },
 
+        --Treesitter - Syntax highlighting and format
+        { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+
     }
 })
 

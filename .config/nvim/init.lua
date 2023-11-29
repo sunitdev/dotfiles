@@ -7,3 +7,4 @@ require('core/keymaps')
 
 -- Plugins
 require('plugins/telescope')
+require('plugins/treesitter')
