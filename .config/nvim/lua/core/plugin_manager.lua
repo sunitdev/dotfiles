@@ -42,6 +42,15 @@ lazy.setup({
         --Treesitter - Syntax highlighting and format
         { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 
+        -- Icons
+        { 'nvim-tree/nvim-web-devicons', lazy = true },
+
+        -- nvim.tree - File Explorer
+        {
+          'nvim-tree/nvim-tree.lua',
+          dependencies = { 'nvim-tree/nvim-web-devicons' },
+        },
+
     }
 })
 
