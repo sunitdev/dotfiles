@@ -17,5 +17,3 @@ map('n', '<C-j>', '<C-w>j')
 map('n', '<C-k>', '<C-w>k')
 map('n', '<C-l>', '<C-w>l')
 
--- nvim.tree
-map("n", "<leader>pv", ':NvimTreeToggle<CR>')

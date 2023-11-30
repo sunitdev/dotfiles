@@ -35,7 +35,8 @@ lazy.setup({
           'nvim-telescope/telescope.nvim',
           tag = '0.1.5', 
           dependencies = { 
-            'nvim-lua/plenary.nvim'
+            'nvim-lua/plenary.nvim',
+            'debugloop/telescope-undo.nvim', --undo extension
           }
         },
 
@@ -51,6 +52,15 @@ lazy.setup({
           dependencies = { 'nvim-tree/nvim-web-devicons' },
         },
 
+        -- Git labels
+        {
+          'lewis6991/gitsigns.nvim',
+          lazy = true,
+          dependencies = {
+            'nvim-lua/plenary.nvim',
+            'kyazdani42/nvim-web-devicons',
+          },
+        },
     }
 })
 
