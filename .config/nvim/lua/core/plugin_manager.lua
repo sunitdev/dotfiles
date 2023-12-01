@@ -61,6 +61,16 @@ lazy.setup({
             'kyazdani42/nvim-web-devicons',
           },
         },
+
+        -- Zero LSP - https://github.com/VonHeikemen/lsp-zero.nvim
+        {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+        {'neovim/nvim-lspconfig'},
+        {'hrsh7th/cmp-nvim-lsp'},
+        {'hrsh7th/nvim-cmp'},
+        {'L3MON4D3/LuaSnip'},
+        -- mason to manage and auto download lsp servers
+        {'williamboman/mason.nvim'},
+        {'williamboman/mason-lspconfig.nvim'},
     }
 })
 

@@ -21,6 +21,7 @@ alias ll='ls --long --header --git'
 alias la='ls --all'
 alias tree='ls --tree'
 alias ipython='python3 -m IPython'
+alias lg='lazygit'
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
