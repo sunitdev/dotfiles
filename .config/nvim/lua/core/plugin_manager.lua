@@ -58,7 +58,7 @@ lazy.setup({
           lazy = true,
           dependencies = {
             'nvim-lua/plenary.nvim',
-            'kyazdani42/nvim-web-devicons',
+            'nvim-tree/nvim-web-devicons',
           },
         },
 
@@ -71,6 +71,11 @@ lazy.setup({
         -- mason to manage and auto download lsp servers
         {'williamboman/mason.nvim'},
         {'williamboman/mason-lspconfig.nvim'},
+
+        -- Status line
+        { 'nvim-lualine/lualine.nvim' },
+
+        -- Auto save file
+        { 'Pocco81/auto-save.nvim' },
     }
 })
-

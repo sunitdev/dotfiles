@@ -15,7 +15,10 @@ opt.smartcase = true    		-- Ignore lowercase for the whole pattern
 opt.linebreak = true    		-- Wrap on word boundary
 opt.splitright = true       -- Vertical split to the right
 opt.splitbelow = true       -- Horizontal split to the bottom
-opt.laststatus=3            -- Set global statusline
+opt.laststatus = 3          -- Set global statusline
+opt.hlsearch = false        -- Disable search highlight for entire file
+opt.incsearch = true        -- Enable incremental search
+opt.scrolloff = 8           -- always show max 8 line when scrooling
 
 
 -- Tabs, indent
@@ -24,35 +27,36 @@ opt.shiftwidth = 2       		-- Shift 2 spaces when tab
 opt.tabstop = 2          		-- 1 tab == 2 spaces
 opt.smartindent = true   		-- Autoindent new lines
 
+
 -- Disable builtin plugins
 local disabled_built_ins = {
-  "2html_plugin",
-  "getscript",
-  "getscriptPlugin",
-  "gzip",
-  "logipat",
-  "netrw",
-  "netrwPlugin",
-  "netrwSettings",
-  "netrwFileHandlers",
-  "matchit",
-  "tar",
-  "tarPlugin",
-  "rrhelper",
-  "spellfile_plugin",
-  "vimball",
-  "vimballPlugin",
-  "zip",
-  "zipPlugin",
-  "tutor",
-  "rplugin",
-  "synmenu",
-  "optwin",
-  "compiler",
-  "bugreport",
-  "ftplugin",
+  '2html_plugin',
+  'getscript',
+  'getscriptPlugin',
+  'gzip',
+  'logipat',
+  'netrw',
+  'netrwPlugin',
+  'netrwSettings',
+  'netrwFileHandlers',
+  'matchit',
+  'tar',
+  'tarPlugin',
+  'rrhelper',
+  'spellfile_plugin',
+  'vimball',
+  'vimballPlugin',
+  'zip',
+  'zipPlugin',
+  'tutor',
+  'rplugin',
+  'synmenu',
+  'optwin',
+  'compiler',
+  'bugreport',
+  'ftplugin',
 }
 
 for _, plugin in pairs(disabled_built_ins) do
-   g["loaded_" .. plugin] = 1
+   g['loaded_' .. plugin] = 1
 end
