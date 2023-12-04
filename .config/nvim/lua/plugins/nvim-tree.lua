@@ -7,7 +7,7 @@ require("nvim-tree").setup({
     sorter = "case_sensitive",
   },
   view = {
-    width = 30,
+    adaptive_size = true
   },
   renderer = {
     group_empty = true,
@@ -21,5 +21,9 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = false, -- show dot files
     custom = { "^.git$" } -- hide .git folder
+  },
+  update_focused_file = {
+    enable = true, -- keep open file in focus
+    update_cwd = false,
   },
 })

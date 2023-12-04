@@ -19,6 +19,7 @@ opt.laststatus = 3          -- Set global statusline
 opt.hlsearch = false        -- Disable search highlight for entire file
 opt.incsearch = true        -- Enable incremental search
 opt.scrolloff = 8           -- always show max 8 line when scrooling
+opt.termguicolors = true    -- Use true color
 
 
 -- Tabs, indent

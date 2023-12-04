@@ -25,7 +25,7 @@ lazy.setup({
     spec = {
         -- Colorscheme:
         {
-          'navarasu/onedark.nvim',
+          'olimorris/onedarkpro.nvim',
           lazy = false, -- load this at startup
           priority = 1000, -- high priority
         },
@@ -77,5 +77,8 @@ lazy.setup({
 
         -- Auto save file
         { 'Pocco81/auto-save.nvim' },
+
+        -- Surrond
+        { 'kylechui/nvim-surround' },
     }
 })
