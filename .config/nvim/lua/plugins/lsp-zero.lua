@@ -1,5 +1,7 @@
 local lsp_zero = require('lsp-zero')
 
+local keymap = require('utils').keymap
+
 lsp_zero.on_attach(function(_, bufnr)
   local opts = { buffer = bufnr }
 
@@ -8,8 +10,8 @@ lsp_zero.on_attach(function(_, bufnr)
   lsp_zero.default_keymaps(opts)
 
   -- custom keybindings
-  vim.keymap.set('n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
-  vim.keymap.set('n', '<leader>.', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+  keymap('n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
+  keymap('n', '<leader>.', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 end)
 
 require('mason').setup({})

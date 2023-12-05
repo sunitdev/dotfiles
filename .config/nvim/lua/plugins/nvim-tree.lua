@@ -1,5 +1,7 @@
+local keymap = require('utils').keymap
+
 -- Keymap
-vim.keymap.set("n", "<leader>pv", ':NvimTreeToggle<CR>')
+keymap("n", "<leader>pv", ':NvimTreeToggle<CR>')
 
 -- Config
 require("nvim-tree").setup({

@@ -1,19 +1,23 @@
 local builtin = require('telescope.builtin')
 local telescope = require('telescope')
 
+local keymap = require('utils').keymap
 
 -- Keybinds
 
 -- Search for project files
-vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+keymap('n', '<leader>pf', builtin.find_files)
 -- Search for git project files
-vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+keymap('n', '<C-p>', builtin.git_files)
 -- Search for string in project
-vim.keymap.set('n', '<leader>ps', function()
+keymap('n', '<leader>ps', function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
 -- Search for help tags
-vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
+keymap('n', '<leader>vh', builtin.help_tags)
+
+--lsp
+keymap('n', 'gr', '<cmd>Telescope lsp_references<CR>')
 
 
 -- Extensions
@@ -21,4 +25,4 @@ vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
 -- undo
 telescope.load_extension("undo")
 
-vim.keymap.set("n", "<leader>u", "<cmd>Telescope undo<cr>")
+keymap("n", "<leader>u", "<cmd>Telescope undo<cr>")
