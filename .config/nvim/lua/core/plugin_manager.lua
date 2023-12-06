@@ -80,5 +80,8 @@ lazy.setup({
 
         -- Surrond
         { 'kylechui/nvim-surround' },
+
+        -- Ident blank line
+        { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
     }
 })
