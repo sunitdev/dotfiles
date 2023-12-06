@@ -22,6 +22,8 @@ alias la='ls --all'
 alias tree='ls --tree'
 alias ipython='python3 -m IPython'
 alias lg='lazygit'
+# Utility to switch between tmux session
+alias ts='tmux attach -t "$(tmux list-sessions -F "#{session_name}" | fzf --reverse)"'
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -73,3 +75,4 @@ zle-line-init() {
 zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+
