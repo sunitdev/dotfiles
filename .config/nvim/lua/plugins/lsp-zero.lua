@@ -12,7 +12,7 @@ lsp_zero.on_attach(function(_, bufnr)
   -- custom keybindings
   keymap('n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
   keymap('n', '<leader>.', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
-  keymap('n', 'F', function ()
+  keymap('n', '<leader>f', function ()
     vim.lsp.buf.format({async = false, timeout_ms = 10000})
   end)
 end)
