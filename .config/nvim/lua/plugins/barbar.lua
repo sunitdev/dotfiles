@@ -1,6 +1,9 @@
 local keymap = require('utils').keymap
 
-require('barbar').setup({})
+require('barbar').setup({
+  -- Insert new buffer at end of list
+  insert_at_end = true,
+})
 
 -- Move to previous/next
 keymap('n', '<leader>bp', '<Cmd>BufferPrevious<CR>', opts)
