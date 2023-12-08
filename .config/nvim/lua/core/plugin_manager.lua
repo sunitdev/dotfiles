@@ -87,7 +87,10 @@ lazy.setup({
         -- Vim Fugitive (Git)
         { 'tpope/vim-fugitive' },
 
-        -- harpoon
-        {  'ThePrimeagen/harpoon', branch = 'harpoon2' },
+        -- Barbar - Buffer tabs
+        {'romgrk/barbar.nvim',
+          init = function() vim.g.barbar_auto_setup = false end,
+          version = '1.x', -- optional: only update when a new 1.x version is released
+        },
     }
 })
