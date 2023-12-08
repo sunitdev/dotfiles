@@ -72,6 +72,9 @@ lazy.setup({
         {'williamboman/mason.nvim'},
         {'williamboman/mason-lspconfig.nvim'},
 
+        -- Formatter
+        { 'mhartington/formatter.nvim' },
+
         -- Status line
         { 'nvim-lualine/lualine.nvim' },
 
