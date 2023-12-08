@@ -1,4 +1,4 @@
--- Bootstrap lazy.nvim
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
@@ -83,5 +83,11 @@ lazy.setup({
 
         -- Ident blank line
         { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+
+        -- Vim Fugitive (Git)
+        { 'tpope/vim-fugitive' },
+
+        -- harpoon
+        {  'ThePrimeagen/harpoon', branch = 'harpoon2' },
     }
 })

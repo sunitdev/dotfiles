@@ -26,3 +26,4 @@ keymap('n', 'gr', '<cmd>Telescope lsp_references<CR>')
 telescope.load_extension("undo")
 
 keymap("n", "<leader>u", "<cmd>Telescope undo<cr>")
+
