@@ -46,5 +46,5 @@ keymap("n", "<leader>f", "<cmd>Format <CR>")
 vim.api.nvim_create_augroup("__formatter__", { clear = true })
 vim.api.nvim_create_autocmd("BufWritePost", {
 	group = "__formatter__",
-	command = ":FormatWrite",
+	command = ":silent FormatWrite",
 })
