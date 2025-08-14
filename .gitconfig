@@ -1,0 +1,18 @@
+[init]
+  defaultBranch = main
+[core]
+  editor = nvim
+[rerere]
+  enabled = true
+  autoupdate = true
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+[help]
+  autocorrect = prompt
