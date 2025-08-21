@@ -5,12 +5,17 @@ set -u  # Treat unset variables as errors
 set -o pipefail
 
 # === CONFIGURATION ===
-PACKAGES=(
+HOMEBREW_PACKAGES=(
     git
     stow
     zsh
-    neovim
-    tmux
+)
+
+HOMEBREW_CASK=(
+    wezterm
+
+    # Font
+    font-jetbrains-mono-nerd-font
 )
 
 # === FUNCTIONS ===
@@ -34,7 +39,10 @@ install_homebrew() {
 
 install_packages() {
     echo "📦 Installing packages..."
-    brew install "${PACKAGES[@]}"
+    brew install "${HOMEBREW_PACKAGES[@]}"
+    brew install --cask "${HOMEBREW_CASK[@]}"
+    # Install neovim nightly build
+    brew install --HEAD neovim
 }
 
 update_dotfiles() {
