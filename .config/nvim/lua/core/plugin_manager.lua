@@ -1,5 +1,5 @@
 
 vim.pack.add({
-  -- Astordark color scheme
-  'https://github.com/AstroNvim/astrotheme',
+  -- Color scheme
+  'https://github.com/catppuccin/nvim',
 })
