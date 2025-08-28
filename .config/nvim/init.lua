@@ -1,6 +1,3 @@
--- Basic config
-require('core/options')
-require('core/plugin_manager')
-
--- Plugins
-require('plugins/colorschema')
+require('options')
+require('keymaps')
+require('plugins')
