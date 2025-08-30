@@ -9,6 +9,7 @@ HOMEBREW_PACKAGES=(
     git
     stow
     zsh
+    zoxide
 )
 
 HOMEBREW_CASK=(
